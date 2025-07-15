@@ -4,24 +4,28 @@ import { Header } from "./components/Header"
 function App() {
 
   return (
-    <>
+    <div className="flex flex-col">
       <Header />
 
-      <main className="flex flex-col p-4 gap-4">
+      <main className="flex flex-col p-4 gap-4 lg:max-w-[1200px] lg:self-center lg:flex-row">
 
-        <h2 className="text-lg text-blue-500 md:text-xl">All (89)</h2>
+        <div className="flex flex-col gap-2 items-start bg-blue-200">
+          <h2 className="text-lg text-blue-500 md:text-xl">All (89)</h2>
 
-        <div>
-
-          <button className="flex flex-row gap-1 items-center justify-center text-base md:text-lg md:gap-2">
+          <button className="flex flex-row gap-1 items-center justify-center text-base md:text-lg md:gap-2 lg:hidden">
             <FaFilter />
             <span>Filter</span>
           </button>
 
+          <div className="hidden lg:flex flex-col">
+
+            <h1>HELLO</h1>
+          </div>
+
         </div>
 
         <ul className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-4">
-          
+
           <li className="border p-2 flex flex-col gap-1 rounded-sm shadow-sm md:gap-2 md:py-4">
             <button className="text-lg self-end md:text-xl">
               <FaShoppingCart />
@@ -55,7 +59,7 @@ function App() {
         </ul>
 
       </main>
-    </>
+    </div>
   )
 }
 
