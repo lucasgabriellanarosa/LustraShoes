@@ -7,9 +7,9 @@ function App() {
     <div className="flex flex-col">
       <Header />
 
-      <main className="flex flex-col p-4 gap-4 lg:max-w-[1200px] lg:self-center lg:flex-row">
+      <main className="flex flex-col p-4 gap-4 lg:max-w-[1200px] lg:self-center lg:flex-row lg:gap-8">
 
-        <div className="flex flex-col gap-2 items-start bg-blue-200">
+        <div className="flex flex-col gap-2 items-start">
           <h2 className="text-lg text-blue-500 md:text-xl">All (89)</h2>
 
           <button className="flex flex-row gap-1 items-center justify-center text-base md:text-lg md:gap-2 lg:hidden">
@@ -17,16 +17,43 @@ function App() {
             <span>Filter</span>
           </button>
 
-          <div className="hidden lg:flex flex-col">
+          <div className="hidden lg:flex flex-col gap-2">
 
-            <h1>HELLO</h1>
+            <div className="flex flex-col gap-1">
+              <label>Order by</label>
+              <select className="border border-gray-400 font-light rounded-sm w-[150px] px-2 py-1 text-sm">
+                <option value="price">Price</option>
+                <option value="name">Name</option>
+                <option value="rating">Rating</option>
+              </select>
+            </div>
+
+            <div className="flex flex-col gap-1">
+              <label>Categories</label>
+
+              <ul className="flex flex-col gap-0.5">
+
+                <li className="flex flex-row gap-1">
+                  <input type="checkbox" />
+                  <label>Man</label>
+                </li>
+
+                <li className="flex flex-row gap-1">
+                  <input type="checkbox" />
+                  <label>Woman</label>
+                </li>
+
+              </ul>
+
+            </div>
+
           </div>
 
         </div>
 
         <ul className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-4">
 
-          <li className="border p-2 flex flex-col gap-1 rounded-sm shadow-sm md:gap-2 md:py-4">
+          <li className="border border-gray-400 p-2 flex flex-col gap-1 rounded-sm shadow-sm md:gap-2 md:py-4">
             <button className="text-lg self-end md:text-xl">
               <FaShoppingCart />
             </button>
