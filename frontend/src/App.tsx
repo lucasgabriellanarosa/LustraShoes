@@ -51,7 +51,7 @@ function App() {
 
         </div>
 
-        <ul className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-4">
+        <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:gap-4">
 
           <li className="border border-gray-400 p-2 flex flex-col gap-1 rounded-sm shadow-sm md:gap-2 md:py-4">
             <button className="text-lg self-end md:text-xl">
