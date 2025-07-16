@@ -1,3 +1,5 @@
+import { Link } from "react-router"
+
 export const Login = () => {
     return (
         <div className="flex flex-col min-h-dvh items-center justify-center md:flex-row md:justify-start">
@@ -5,7 +7,9 @@ export const Login = () => {
             <header className="bg-linear-to-b from-neutral-800 to-neutral-700 flex flex-col items-center justify-center absolute top-0 w-full text-blue-500 gap-6 py-4 rounded-b-[80px] sm:py-8 sm:rounded-b-[160px] md:relative md:h-dvh md:rounded-bl-none md:w-1/2 md:rounded-r-[320px]">
                 <h2 className="text-xl sm:text-2xl">Hello, Welcome!</h2>
                 <p className="text-sm sm:text-base">Don't have an account?</p>
-                <button className="text-base border py-1 px-8 rounded-sm sm:text-lg cursor-pointer hover:bg-blue-300 hover:text-blue-900">Register</button>
+                <Link to="/register">
+                    <button className="text-base border py-1 px-8 rounded-sm sm:text-lg cursor-pointer hover:bg-blue-300 hover:text-blue-900">Register</button>
+                </Link>
             </header>
 
             <main className="flex flex-col justify-center items-center gap-6 sm:gap-12 md:w-1/2">
