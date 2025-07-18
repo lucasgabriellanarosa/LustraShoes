@@ -1,5 +1,6 @@
 import { FaFilter, FaRegStar, FaShoppingCart, FaStar, FaStarHalfAlt } from "react-icons/fa"
 import { Header } from "./components/Header"
+import { Link } from "react-router"
 
 function App() {
 
@@ -59,7 +60,9 @@ function App() {
             </button>
             <img src="https://twofeet.fbitsstatic.net/img/p/tenis-everlast-range-3-unissex-152248/350332.jpg?w=1000&h=1000&v=no-value" />
             <div>
-              <h3 className="text-base font-medium md:text-lg">Everlast Shoes</h3>
+              <Link to={"/product/0"}>
+                <h3 className="text-base font-medium md:text-lg">Everlast Shoes</h3>
+              </Link>
               <h4 className="text-sm font-medium md:text-base">$25.47 <span className="line-through text-gray-500">($47.33)</span></h4>
             </div>
 

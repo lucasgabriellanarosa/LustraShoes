@@ -2,9 +2,9 @@ import { Link } from "react-router"
 
 export const Register = () => {
     return (
-        <div className="flex flex-col min-h-dvh items-center justify-center md:flex-row md:justify-start">
+        <div className="flex flex-col min-h-dvh items-center justify-center md:justify-start md:flex-row-reverse">
 
-            <header className="bg-linear-to-b from-neutral-800 to-neutral-700 flex flex-col items-center justify-center absolute top-0 w-full text-blue-500 gap-6 py-4 rounded-b-[80px] sm:py-8 sm:rounded-b-[160px] md:relative md:h-dvh md:rounded-bl-none md:w-1/2 md:rounded-r-[320px]">
+            <header className="bg-linear-to-b from-neutral-800 to-neutral-700 flex flex-col items-center justify-center absolute top-0 w-full text-blue-500 gap-6 py-4 rounded-b-[80px] sm:py-8 sm:rounded-b-[160px] md:relative md:h-dvh md:rounded-br-none md:w-1/2 md:rounded-l-[320px]">
                 <h2 className="text-xl sm:text-2xl">Welcome Back!</h2>
                 <p className="text-sm sm:text-base">Already have an account?</p>
 
