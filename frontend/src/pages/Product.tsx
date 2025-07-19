@@ -6,7 +6,7 @@ export const Product = () => {
     <div>
       <Header />
 
-      <main className="p-4 flex flex-col gap-6 md:p-8">
+      <main className="p-4 flex flex-col gap-6 md:p-8 lg:max-w-[1200px] lg:m-auto">
 
 
         <div className="flex flex-col gap-2 md:flex-row">
@@ -81,6 +81,35 @@ export const Product = () => {
           </div>
           <ul className="flex flex-col gap-2">
             <li className="flex flex-col gap-2">
+              <div className="flex flex-row gap-2 items-center">
+                <div
+                  className="h-[45px] w-[45px] bg-center bg-cover rounded-full md:h-[60px] md:w-[60px]" 
+                  style={{ backgroundImage: "url('/rhuan.jpg')" }}
+                ></div>
+                <div>
+                  <h5 className="text-base font-semibold md:text-lg">Rhuan</h5>
+                  <ul className="flex flex-row items-center md:text-lg md:gap-1">
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStarHalfAlt />
+                    </li>
+                    <li>
+                      <FaRegStar />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p className="text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem itaque saepe odio voluptas sequi quis, quidem repellat quia et dignissimos quibusdam quos minima cumque atque.</p>
+            </li>
+                        <li className="flex flex-col gap-2">
               <div className="flex flex-row gap-2 items-center">
                 <div
                   className="h-[45px] w-[45px] bg-center bg-cover rounded-full md:h-[60px] md:w-[60px]" 

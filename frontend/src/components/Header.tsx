@@ -1,5 +1,6 @@
 import { FaHome, FaShoppingCart, FaUser } from "react-icons/fa"
 import { IoIosSearch } from "react-icons/io"
+import { Link } from "react-router"
 
 export const Header = () => {
     return (
@@ -11,17 +12,17 @@ export const Header = () => {
 
                 <nav className="flex flex-row gap-4 text-white">
 
-                    <a href="">
+                    <Link to={"/"}>
                         <FaHome />
-                    </a>
+                    </Link>
 
-                    <a href="">
+                    <Link to={"/cart"}>
                         <FaShoppingCart />
-                    </a>
+                    </Link>
 
-                    <a href="">
+                    <Link to={"/user"}>
                         <FaUser />
-                    </a>
+                    </Link>
 
                 </nav>
 
