@@ -1,8 +1,18 @@
 import { FaFilter, FaRegStar, FaShoppingCart, FaStar, FaStarHalfAlt } from "react-icons/fa"
 import { Header } from "./components/Header"
 import { Link } from "react-router"
+import { useEffect } from "react"
+import axios from "axios"
 
 function App() {
+
+  useEffect(() => {
+    axios.get("http://127.0.0.1:8000/api/shoes")
+    .then(res => {
+      console.log(res.data)
+    })
+  }, [])
+  
 
   return (
     <div className="flex flex-col">
